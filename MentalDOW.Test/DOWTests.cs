@@ -87,12 +87,12 @@ namespace MentalDOW.Test
                 var date = startingDate.AddDays(i);
                 if ((int) date.DayOfWeek != (int) GetDOW(date.Year,date.Month,date.Day))
                 {
-                    Assert.IsTrue(false);
+                    Assert.Fail();
                     break;
                 }
 
             }
-            Assert.IsTrue(true);
+            Assert.Pass();
         }
     }
 }
