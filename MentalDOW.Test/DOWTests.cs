@@ -77,5 +77,22 @@ namespace MentalDOW.Test
         {
             return DayOfWeek.MonthCode(year, month);
         }
+
+        [Test]
+        public void CanCalculate400YearsOfDOW()
+        {
+            var startingDate = new DateTime(1752, 9, 14);
+            for (int i=0; i < (int) (400 * 365.25); i++)
+            {
+                var date = startingDate.AddDays(i);
+                if ((int) date.DayOfWeek != (int) GetDOW(date.Year,date.Month,date.Day))
+                {
+                    Assert.IsTrue(false);
+                    break;
+                }
+
+            }
+            Assert.IsTrue(true);
+        }
     }
 }

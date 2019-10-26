@@ -6,7 +6,7 @@ namespace MentalDOW
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Run the tests!");
         }
     }
 }
