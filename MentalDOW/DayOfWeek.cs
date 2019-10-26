@@ -48,7 +48,7 @@ namespace MentalDOW
 
         protected static int MonthCode(int year, int month)
         {
-            if (IsLeapYear(year) && (month == 1 || month == 2))
+            if ((month == 1 || month == 2) && IsLeapYear(year))
                 return monthCode[month] - 1;
             return monthCode[month];
         }
