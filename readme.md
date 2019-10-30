@@ -10,3 +10,6 @@ combined with knowing the rule for determining a leap year. Sprinkle with
 a little modulo 7 and modulo 4 math and voila!
 
 
+> Secrets of Mental Math.
+>
+> -- <cite>Arthur Benjamin</cite>
